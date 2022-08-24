@@ -3,7 +3,7 @@ public class Cuenta {
 
     private String nombre;
     private String numeroCuenta;
-    private double tipoInteres;
+    private double consignacion;
     private double saldo;
 
     //Constructor por defecto
@@ -11,10 +11,10 @@ public class Cuenta {
     }
 
     //Constructor con parámetros
-    public Cuenta(String nombre, String numeroCuenta, double tipoInteres, double saldo) {
+    public Cuenta(String nombre, String numeroCuenta, double consignacion, double saldo) {
         this.nombre = nombre;
         this.numeroCuenta = numeroCuenta;
-        this.tipoInteres = tipoInteres;
+        this.consignacion = consignacion;
         this.saldo = saldo;
     }
 
@@ -22,7 +22,7 @@ public class Cuenta {
     public Cuenta(final Cuenta c) {
         nombre = c.nombre;
         numeroCuenta = c.numeroCuenta;
-        tipoInteres = c.tipoInteres;
+        consignacion = c.consignacion;
         saldo = c.saldo;
     }
 
@@ -35,8 +35,8 @@ public class Cuenta {
         numeroCuenta = s;
     }
 
-    public void setTipoInteres(double n) {
-        tipoInteres = n;
+    public void setConsignacion(double n) {
+        consignacion = n;
     }
 
     public void setSaldo(double n) {
@@ -51,8 +51,8 @@ public class Cuenta {
         return numeroCuenta;
     }
 
-    public double getTipoInteres() {
-        return tipoInteres;
+    public double getConsignacion() {
+        return consignacion;
     }
 
     public double getSaldo() {
