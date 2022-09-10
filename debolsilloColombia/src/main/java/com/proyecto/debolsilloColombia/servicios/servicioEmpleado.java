@@ -9,19 +9,7 @@ import java.util.List;
 
 @Service
 public class servicioEmpleado{
-   /*Empresa ep1;
-
-    servicioEmpleado se1 = new servicioEmpleado ();
-    public servicioEmpresa() {
-        Empleado emple1 = this.se1.getEmpleado ( );
-        this.ep1 = new Empresa ( "DEBOLSILLOCOLOMBIA" , "CRA 35 # 79-100" , 313 , "900-486518918" , emple1);
-    }
-
-    public Empresa getEmpresa ( ) {
-        return this.ep1;
-    }*/
-
-    private repositorioEmpleado repositorios;
+      private repositorioEmpleado repositorios;
 
     public servicioEmpleado (repositorioEmpleado repositorios) {
         this.repositorios = repositorios;
