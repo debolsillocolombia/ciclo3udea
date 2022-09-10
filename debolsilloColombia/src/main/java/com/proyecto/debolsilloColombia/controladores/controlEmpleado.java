@@ -1,7 +1,7 @@
 package com.proyecto.debolsilloColombia.controladores;
 
-import com.proyecto.debolsilloColombia.entidades.Empresa;
-import com.proyecto.debolsilloColombia.servicios.servicioEmpresa;
+import com.proyecto.debolsilloColombia.entidades.Empleado;
+import com.proyecto.debolsilloColombia.servicios.servicioEmpleado;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,7 +9,7 @@ import java.security.Provider;
 import java.util.List;
 
 @RestController
-public class controlEmpresa{
+public class controlEmpleado{
     /* servicioEmpresa se1 = new servicioEmpresa ();
      Empresa emp1;
      public controlEmpresa(){
@@ -21,14 +21,14 @@ public class controlEmpresa{
          return this.emp1;
 
  }
-     */ servicioEmpresa se1;
+     */ servicioEmpleado emp1;
 
-    public controlEmpresa (servicioEmpresa se1) {
-        this.se1 = se1;
+    public controlEmpleado (servicioEmpleado emp1) {
+        this.emp1 = emp1;
     }
 
     @GetMapping("/informacion")
-    public List<Empresa> informacion () {
-        return this.se1.getRepositorios ();
+    public List<Empleado> informacion () {
+        return this.emp1.getRepositorios ();
     }
 }

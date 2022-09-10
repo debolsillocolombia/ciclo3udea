@@ -24,13 +24,11 @@ public class servicioEmpresa{
 
     private repositorioEmpresa repositorios;
 
-
-    public servicioEmpresa(repositorioEmpresa repositorios){
-        this.repositorios=repositorios;
+    public servicioEmpresa (repositorioEmpresa repositorios) {
+        this.repositorios = repositorios;
     }
 
-    public
-    List<Empresa> getRepositorios(){
-        return this.repositorios.findAll();
+    public List<Empresa> getRepositorios () {
+        return this.repositorios.findAll ();
     }
 }
