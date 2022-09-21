@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:/thymleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>nuevoempleado</title>
+</head>
+
+<body>
+    <main>
+
+        <div class="px-4py-3 my-2 text-center">
+            <h1 class="display-5 fw-bold mb-5">
+                nuevo Empleado
+            </h1>
+            <div class="col-lg-5 mx-auto">
+                <form th:action="@{/empleados}" th:method="post" th:object="${empleado}" "class="d-flex flex-column gap-3 align-items-center ">
+                   
+                    <input th:field="*{nombre}" class="form-control" type="text" placeholder="nombre" />
+                    <input th:field="*{correo}" class="form-control" type="email" placeholder="correo" />
+                    <input th:field="*{empresa de empleado}" class="form-control" type="text" placeholder="empresa de empleado" />
+                    <input th:field="*{rolempleado}" class="form-control" type="text" placeholder="rolempleado" />
+
+
+            </div>
+            <button class="my-5 btn btn-primary" type="submit">crear empleado</button>
+            <a href="empleado.html" class="my-1 btn btn-secondary">volver a empleados</a>
+            </form>
+        </div>
+    </main>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
