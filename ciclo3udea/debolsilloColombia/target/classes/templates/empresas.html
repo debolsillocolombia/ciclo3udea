@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:/thymleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <title>Empresas</title>
+</head>
+
+<body>
+
+    <div class="px-4 py-4 mx-5 my-5 text-center">
+        <img src="folder/empresa.png" class="d-block mx-auto my-auto mb-4" height="200" alt="bolsillo">
+        <h1 class="display-5 fw-bold">Empresa</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto obcaecati vitae ut esse beatae
+            blanditiis, in quos, asperiores rem dolores, delectus dolorum? Reiciendis aperiam quae molestiae possimus
+            quidem deserunt voluptate.</p>
+
+
+        <div class="d-flex justify-content-center text-center gap-3 ">
+
+            <div th:each="Empresa:${empresa}" class="card" style="width: 16rem;">
+                
+                <div class="card-body">
+                    <img src="folder/ecopetrol.jpg" class="d-block mx-auto my-5 mb-4"  alt="usuario" height="150">
+                    <h5 th:text=""${empleado.nombre} class="card-title">ecopetrol</h5>
+                    <p th:text=""${empleado.direccion}  class="card-text">ccartagena 34-34</p>
+                    <p th:text=""${empleado.xxxx.mmmmm}  class="card-text">energia</p>
+                
+                </div>
+            </div>
+
+           
+            
+        </div>
+
+        <a href="index.html" class="my-5 btn btn-primary">volver a inicio</a>
+        <a href="nuevaempresa.html" class="my-5 btn btn-primary">crear empresa</a>
+
+
+    </div>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
